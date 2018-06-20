@@ -7,7 +7,7 @@ cat <<Part01 >$CONFIG_FILE
 
 server $OVPN_NETWORK
 
-port 1194
+port 443
 proto $OVPN_PROTOCOL
 dev tun
 
@@ -46,7 +46,6 @@ tls-cipher $OVPN_TLS_CIPHERS
 auth SHA512
 cipher AES-256-CBC
 
-comp-lzo
 
 user nobody
 group nobody
