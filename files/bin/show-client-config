@@ -23,7 +23,6 @@ remote-cert-tls server
 key-direction 1
 cipher AES-256-CBC
 auth SHA512
-comp-lzo
 proto tcp
 reneg-sec 0
 "
@@ -65,7 +64,7 @@ echo "
 verb $OVPN_VERBOSITY
 
 <connection>
-remote $OVPN_SERVER_CN 1194 $OVPN_PROTOCOL
+remote $OVPN_SERVER_CN 443 $OVPN_PROTOCOL
 float
 nobind
 </connection>
